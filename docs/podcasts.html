@@ -1,7 +1,8 @@
 <html>
 
 <head>
-    <title>Tesla Links</title>
+    <title>Tesla Podcasts</title>
+    <script type="module" src="podcasts.js"></script>
     <style>
         body {
             background-color: black;
@@ -22,38 +23,15 @@
 </head>
 
 <body>
-    <table>
-        <tr>
-            <td>
-                <a href="https://podbay.fm/p/chicane-presents-sunsets">SunSets: Chicane</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://podbay.fm/p/london-elektricity-podcast">FSM: London Electricity</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://podbay.fm/p/hospital-records-podcast">Hospital Music Podcast</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://podbay.fm/p/1483510527">Stackoverflow Podcast</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://podbay.fm/p/hidden-brain">Hidden Brain Podcast</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://podbay.fm/p/code-brew-285651">Code Brew Podcast</a>
-            </td>
-        </tr>
-    </table>
+    <div id="model">
+        <table>
+            <tr v-for="item in app.data.items">
+                <td>
+                    <a :href="`${item.url}`">{{item.label}}</a>
+                </td>
+            </tr>
+        </table>
+    </div>
 </body>
 
 </html>

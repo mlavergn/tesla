@@ -2,6 +2,7 @@
 
 <head>
     <title>Tesla Links</title>
+    <script type="module" src="index.js"></script>
     <style>
         body {
             background-color: black;
@@ -22,60 +23,15 @@
 </head>
 
 <body>
-    <table>
-        <tr>
-            <td>
-                <a href="podcasts.html">Podcasts</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://music.apple.com/us/browse">Apple Music</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://abetterrouteplanner.com/classic/">Better Route Planner</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://abettertheater.com/">Better Theater</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://teslawaze.azurewebsites.net
-                ">TeslaWaze</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://maps.google.com
-                ">Google Maps</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://supercharge.info/map">Super Chargers</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://about.teslafi.com">TeslaFi</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://fast.com">Fast by Netflix</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://github.com/mlavergn">GitHub</a>
-            </td>
-        </tr>
-    </table>
+    <div id="model">
+        <table>
+            <tr v-for="item in app.data.items">
+                <td>
+                    <a :href="`${item.url}`">{{item.label}}</a>
+                </td>
+            </tr>
+        </table>
+    </div>
 </body>
 
 </html>
