@@ -2,12 +2,8 @@ import { createApp, reactive } from "https://unpkg.com/petite-vue?module";
 
 var links = [
     {
-        url: "podcasts.html",
-        label: "Podcasts"
-    },
-    {
-        url: "https://music.apple.com/us/browse",
-        label: "Apple Music"
+        url: "https://teslawaze.azurewebsites.net",
+        label: "TeslaWaze"
     },
     {
         url: "https://abetterrouteplanner.com/classic/",
@@ -18,10 +14,6 @@ var links = [
         label: "A Better Theater"
     },
     {
-        url: "https://teslawaze.azurewebsites.net",
-        label: "TeslaWaze"
-    },
-    {
         url: "https://supercharge.info/map",
         label: "Super Chargers"
     },
@@ -29,6 +21,10 @@ var links = [
         url: "https://maps.google.com",
         label: "Google Maps"
     },
+    {
+        url: "https://cnbc.com",
+        label: "CNBC"
+    },    
     {
         url: "https://about.teslafi.com",
         label: "TeslaFi"
@@ -40,7 +36,11 @@ var links = [
     {
         url: "https://github.com/mlavergn",
         label: "GitHub"
-    }
+    },
+    {
+        url: "podcasts.html",
+        label: "Podcasts"
+    }    
 ];
 
 const app = reactive({
