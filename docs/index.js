@@ -40,7 +40,11 @@ var links = [
     {
         url: "podcasts.html",
         label: "Podcasts"
-    }    
+    },
+    {
+        url: "https://mlavergn.github.io/webapp/src/pwa.html",
+        label: "PWA Test"
+    }
 ];
 
 const app = reactive({
