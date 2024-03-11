@@ -42,7 +42,7 @@ var links = [
         label: "Podcasts"
     },
     {
-        url: "https://mlavergn.github.io/webapp/src/pwa.html",
+        url: "https://mlavergn.github.io/webapp/src/index.html",
         label: "PWA Test"
     }
 ];
